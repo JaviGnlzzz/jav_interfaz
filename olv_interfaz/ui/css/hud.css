@@ -1,0 +1,65 @@
+.interfaz-hud{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .8vh;
+    max-width: 35vh;
+    height: 4.25vh;
+    margin: 1.5vh 2.5vh;
+}
+
+.interfaz-hud .hud-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .6vh;
+    width: 4vh;
+    height: 100%;
+    background-color: var(--black-color);
+    box-shadow: 0 0 .8vh var(--black-color);
+    border-radius: .8vh;
+}
+
+.hud-container i{
+    font-size: 1.5vh;
+    color: var(--white-color);
+}
+
+.hud-container .bar-container{
+    width: 70%;
+    height: .4vh;
+    background: rgba(255, 255, 255, 0.068);
+    border-radius: .8vh;
+}
+
+.bar-container .progress-container{
+    width: 0%;
+    height: 100%;
+    background-color: var(--red-color);
+    box-shadow: 0 0 .35vh var(--red-color);
+    border-radius: .8vh;
+    transition: width .25s ease-in-out;
+}
+
+.micro i{
+    transition: .25s;
+}
+
+.radio-channel{
+    display: none;
+    position: absolute;
+    font-family: normal;
+    font-size: 1vh;
+    bottom: .35vh;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--red-color);
+    text-shadow: 0 0 .35vh var(--red-color);
+}

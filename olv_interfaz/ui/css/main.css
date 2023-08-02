@@ -1,0 +1,41 @@
+@font-face {
+    font-family: normal;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: digital;
+    src: url(../fonts/digital-7.ttf);
+}
+
+@font-face {
+    font-family: light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+*{
+    user-select: none;
+}
+
+:root{
+    --black-color: rgba(8, 8, 8, 0.877);
+    --white-color: rgba(231, 231, 231, 0.863);
+    --red-color: rgb(235, 104, 104);
+    --active-voice: rgba(245, 97, 97, 0.863);
+    --grey-color: rgba(201, 200, 200, 0.863);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.interfaz{
+    position: absolute;
+    display: flex;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+}
